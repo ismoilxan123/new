@@ -1,0 +1,312 @@
+/* GLOBAL STYLES */
+:root {
+  --dark-violet: #34313d;
+  --light-violet: #3a3054;
+  --violet: #4b3f6b;
+  --gray-color: #9e9aa8;
+  --light-blue: #eff1f7;
+  --aqua-color: #2bd0d0;
+  --hover-color: #9ae3e3;
+}
+
+/* COLOR CLASS */
+.dark-violet {
+  color: var(--dark-violet);
+}
+.light-violet {
+  color: var(--light-violet);
+}
+.violet {
+  color: var(--violet);
+}
+.gray-color {
+  color: var(--gray-color);
+}
+.light-blue {
+  color: var(--light-blue);
+}
+.white {
+  color: #fff;
+}
+.aqua {
+  color: var(--aqua-color);
+}
+/* END OF COLOR CLASS */
+
+/* MAIN CLASS */
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: start;
+}
+.text-center {
+  text-align: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+/* END OF MAIN CLASS */
+
+/* UTILITY CLASSES */
+.btn {
+  background-color: var(--aqua-color);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+.btn-sign-up {
+  padding: 9px 23px 8px 24px;
+  border-radius: 28px;
+}
+.btn-get {
+  padding: 14px 40px 12px;
+  border-radius: 28px;
+}
+.btn-shorten {
+  padding: 18px 40px 16px 41px;
+  border-radius: 10px;
+}
+.btn-copy {
+  padding: 10px 31px 7px;
+  border-radius: 5px;
+}
+.md-sign {
+  padding: 12px 105px 9px;
+  border-radius: 28px;
+}
+.btn:hover {
+  --aqua-color: #9ae3e3;
+}
+
+/* TYPOGRAPHY CLASS */
+.text-1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 90px;
+}
+.text-2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.text-3 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.text-4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.text-5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+.text-6 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.text-7 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.text-8 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+}
+.text-9 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.text-10 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* END OF TYPOGRAPHY CLASS */
+
+/* GAP CLASS */
+
+.gap-3 {
+  gap: 30px;
+}
+.gap-10 {
+  gap: 100px;
+}
+.gap-2-4 {
+  gap: 24px;
+}
+/* END OF GAP CLASS */
+
+/* MARGIN CLASS */
+.mb-0-5 {
+  margin-bottom: 5px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-18 {
+  margin-bottom: 18px;
+}
+.mb-22 {
+  margin-bottom: 22px;
+}
+.mb-3-8 {
+  margin-bottom: 38px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.mb-152 {
+  margin-bottom: 152px;
+}
+/* END OF MARGIN CLASS */
+
+/* PADDING CLASS */
+.pb-100 {
+  padding-bottom: 100px;
+}
+.pt-204 {
+  padding-top: 204px;
+}
+/* END OF PADDING CLASS */
+
+/* END OF UTILITY CLASS */
+
+/* HEADER */
+header {
+  background-color: #fff;
+  padding-top: 48px;
+  padding-bottom: 8px;
+  margin-bottom: 70px;
+}
+.header__list:hover {
+  color: var(--dark-violet);
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon input {
+  display: none;
+}
+/* SECTION-1 */
+.section1--img-1 {
+  display: none;
+}
+/* SECTION-2 */
+#section2 {
+  background-color: var(--light-blue);
+}
+.section2__container {
+  position: relative;
+}
+.section2--box {
+  background: url("../images/section2__card__left--img.png") no-repeat left
+      bottom,
+    url("../images/section2__card__right--img.png") no-repeat right top;
+  background-color: var(--light-violet);
+  padding: 52px 64px;
+  border-radius: 10px;
+  position: absolute;
+  top: -64px;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+.section2--box input {
+  padding: 14px 475px 14px 32px;
+  border-radius: 10px;
+  background: #fff;
+  border: none;
+  outline: none;
+}
+.hover__box {
+  display: none;
+
+  position: absolute;
+  top: 115%;
+}
+.hover-list {
+  padding: 14px 26px;
+  background-color: #fff;
+  border-radius: 5px;
+  gap: 230px;
+  margin-bottom: 16px;
+}
+.shorten:hover + div {
+  display: block;
+}
+/* SECTION-3 */
+#section3 {
+  background-color: var(--light-blue);
+  padding-bottom: 120px;
+}
+.section3__card {
+  background-image: url("../images/section3__line.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section3__box {
+  height: 100%;
+  padding: 72px 32px 41px;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
+}
+.section3__box img {
+  position: absolute;
+  top: -44px;
+}
+.section3__box p {
+  line-height: 26px;
+}
+.section3__card div:nth-child(2) {
+  margin-top: 44px;
+}
+.section3__card div:nth-child(3) {
+  margin-top: 88px;
+}
+/* SECTION-4 */
+
+#section4 {
+  padding: 57px 0px;
+  background: url("../images/section4__img-1.png") no-repeat left top,
+    url("../images/section4__img-2.png") no-repeat right top,
+    url("../images/section4__img-3.png") no-repeat left bottom;
+  background-color: var(--light-violet);
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #232127;
+  padding: 70px 0px;
+}
+.footer__list li a {
+  color: #bfbfbf;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.234px;
+}
+.footer__list li a:hover {
+  color: var(--aqua-color);
+}

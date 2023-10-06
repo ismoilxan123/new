@@ -1,0 +1,115 @@
+@media screen and (max-width: 400px) {
+  body {
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 327px;
+    margin: 0 auto;
+  }
+  /* TYPOGRAPHY CLASS */
+  .text-1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  .text-2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+  .text-5 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .text-8 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+  .text-9 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .text-10 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  /* END OF TYPOGRAPHY */
+
+  /* header */
+  .header--md {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-icon label img:nth-child(2) {
+    display: none;
+  }
+  .menu-icon input:checked + label img:nth-child(1) {
+    display: none;
+  }
+  .menu-icon input:checked + label img:nth-child(2) {
+    display: block;
+  }
+  .md__list {
+    display: none;
+  }
+  .menu-icon input:checked ~ div {
+    display: block;
+  }
+  .md__list {
+    position: absolute;
+    top: 150%;
+    left: -300px;
+    border-radius: 10px;
+    background: #3a3054;
+    padding: 40px 24px;
+  }
+
+  /* section-1 */
+  .section1--img-1 {
+    display: block;
+    margin-bottom: 37px;
+  }
+  .section1--img {
+    display: none;
+  }
+  .section1--text {
+    text-align: center;
+  }
+
+  /* section-2  */
+  .section2--box {
+    margin-top: 80px;
+    padding: 24px;
+  }
+  .md-section2_text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* section-3 */
+  .section3__card {
+    display: flex;
+    flex-direction: column;
+  }
+  .section3__card {
+    background-image: url("../images/md-section3-line.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* footer  */
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 38px;
+  }
+}
